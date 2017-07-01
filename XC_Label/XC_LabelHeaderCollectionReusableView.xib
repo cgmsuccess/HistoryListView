@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="XC_LabelHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐搜索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2m-ce-aHc">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzR-B9-Bqd">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="jqv-OB-gZU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tts-lQ-Qf9">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="Mpd-4J-ydd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzr-Ca-Otw">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="编辑">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="取消">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fzR-B9-Bqd" secondAttribute="bottom" id="L58-rc-7kZ"/>
+                <constraint firstAttribute="trailing" secondItem="vzr-Ca-Otw" secondAttribute="trailing" constant="8" id="Mo5-ds-Uhj"/>
+                <constraint firstItem="Tts-lQ-Qf9" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ZGB-A8-M4f"/>
+                <constraint firstItem="Tts-lQ-Qf9" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="ZVv-nL-S68"/>
+                <constraint firstItem="Y2m-ce-aHc" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="dz5-3F-WJv"/>
+                <constraint firstItem="vzr-Ca-Otw" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="ner-Y2-1Yx"/>
+                <constraint firstItem="Y2m-ce-aHc" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="oSo-tg-Xua"/>
+                <constraint firstAttribute="trailing" secondItem="fzR-B9-Bqd" secondAttribute="trailing" id="qwz-R6-5rf"/>
+                <constraint firstAttribute="trailing" secondItem="Tts-lQ-Qf9" secondAttribute="trailing" id="unP-1f-zuL"/>
+                <constraint firstItem="fzR-B9-Bqd" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="y8Y-vk-CiF"/>
+            </constraints>
+            <connections>
+                <outlet property="editorOutle" destination="vzr-Ca-Otw" id="H15-2j-8Zj"/>
+                <outlet property="headerLabel" destination="Y2m-ce-aHc" id="Y3V-TM-CzO"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
