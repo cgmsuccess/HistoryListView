@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Label_btn.h"
 
 @interface XC_labelCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *xc_label;
 
-@property (weak, nonatomic) IBOutlet UIButton *closeBtnOutle;
+@property (weak, nonatomic) IBOutlet Label_btn *closeBtnOutle;
 
+@property (weak, nonatomic) IBOutlet UIView *cellBackView;
+
+/** 这个属性是：背景颜色****/
+@property (nonatomic)UIColor * cellbackColor;
 
 
 @end

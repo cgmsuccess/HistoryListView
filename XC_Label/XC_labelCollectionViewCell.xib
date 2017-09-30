@@ -15,32 +15,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhZ-NI-XjK"/>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fn-x4-gcj">
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h01-lp-NHa">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h01-lp-NHa" customClass="Label_btn">
                         <constraints>
-                            <constraint firstAttribute="width" constant="17" id="aWP-sp-KBP"/>
-                            <constraint firstAttribute="height" constant="17" id="ecb-q6-TLh"/>
+                            <constraint firstAttribute="height" constant="17" id="Fcm-hU-Hfo"/>
+                            <constraint firstAttribute="width" constant="17" id="TEt-ue-dOO"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <state key="normal" title="x">
                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="7fn-x4-gcj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="2xJ-U2-3DV"/>
-                <constraint firstAttribute="trailing" secondItem="h01-lp-NHa" secondAttribute="trailing" id="JrO-cT-CXy"/>
-                <constraint firstItem="7fn-x4-gcj" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Z5T-T3-V3o"/>
-                <constraint firstItem="h01-lp-NHa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aEL-YE-xFj"/>
+                <constraint firstItem="mhZ-NI-XjK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="25t-zN-0HK"/>
+                <constraint firstItem="7fn-x4-gcj" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="DbO-xd-Yzc"/>
+                <constraint firstItem="mhZ-NI-XjK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y0a-7G-pTK"/>
+                <constraint firstItem="7fn-x4-gcj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="aof-1b-goq"/>
+                <constraint firstItem="h01-lp-NHa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bci-gu-6YE"/>
+                <constraint firstAttribute="trailing" secondItem="mhZ-NI-XjK" secondAttribute="trailing" id="iuB-ng-1WD"/>
+                <constraint firstAttribute="trailing" secondItem="h01-lp-NHa" secondAttribute="trailing" id="kxG-Av-hso"/>
+                <constraint firstAttribute="bottom" secondItem="mhZ-NI-XjK" secondAttribute="bottom" id="xEb-VH-cwL"/>
             </constraints>
             <size key="customSize" width="160" height="50"/>
             <connections>
+                <outlet property="cellBackView" destination="mhZ-NI-XjK" id="l9B-gm-owz"/>
                 <outlet property="closeBtnOutle" destination="h01-lp-NHa" id="4zb-ef-zJm"/>
                 <outlet property="xc_label" destination="7fn-x4-gcj" id="h5v-LS-cCz"/>
             </connections>

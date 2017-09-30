@@ -7,20 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "Demo1ViewController.h"
 
-#import "XC_label.h"
-#import "XC_ShearchBarView.h"
 
-#define LabelScreenW [UIScreen mainScreen].bounds.size.width
-#define LabelScreenH [UIScreen mainScreen].bounds.size.height
 
-@interface ViewController ()<selectHotOrHistoryDelegate,Xc_serchViewCilckBtn>
+static NSString *const cellID = @"cellID" ;
 
-@property (nonatomic,strong) XC_label  *xcLabel ;
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong)NSMutableArray *dataSource ;//推荐搜索
 
-@property (nonatomic,strong)NSMutableArray *historySource ;//历史搜索
+@property (weak, nonatomic) IBOutlet UITableView *tablewView;
+
+
+@property (nonatomic,strong)NSArray *dataSource ;
+
 
 @end
 
@@ -29,72 +29,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self setUIsearch]; //设置SearchBar
-    [self hotOptions] ;//推荐搜索
+//    [self setUIsearch]; //设置SearchBar
+//    [self hotOptions] ;//推荐搜索
+    
+    [self  setData];
+
+    [self setUI];
+    
     
 }
 
-#pragma mark 这里是 设置搜索页面 的UI
--(void)setUIsearch
+-(void)setData
 {
-    XC_ShearchBarView *searchView = [[XC_ShearchBarView alloc] initWithFrame:CGRectMake(0, 0, LabelScreenW, 64)];
-    searchView.delegate = self ;
-    [self.view addSubview:searchView];
+    self.dataSource = @[@"默认UI模拟推荐选项和历史搜索选项Demo1",
+                        @"局部修改选项的UI和高度等Demo2",
+                        @"把他作为一个键盘的toolsView使用Demo3"
+                        ];
 }
 
--(void)hotOptions
+-(void)setUI
 {
-    //推荐搜索 ，模拟网络数据
-    NSArray *arr = @[@"fes4ewrew",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷"];
-    
-    self.dataSource = [NSMutableArray arrayWithArray:arr];
-    
-    //历史搜索 。本地数据库里面拿数据
-    NSArray *historyArr =@[@"蜂飞舞",@"粉丝纷纷",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷",@"fes",@"发顺丰",@"蜂飞舞",@"粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷粉丝纷纷"];
-    self.historySource = [NSMutableArray arrayWithArray:historyArr];
-    
-    _xcLabel = [[XC_label alloc] initWithFrame:CGRectMake(0, 64, LabelScreenW, LabelScreenH-64) AndTitleArr:arr AndhistoryArr:historyArr AndTitleFont:16];
-    
-    _xcLabel.delegate = self ;
-    
-    [self.view addSubview:_xcLabel];
+    self.automaticallyAdjustsScrollViewInsets = NO ;
+    [self.tablewView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
 }
 
 
 
+#pragma mark UITableViewDataSource,UITableViewDelegate
 
-#pragma mark selectHotOrHistoryDelegate
-//选中某个选项
--(void)selectHotOrHistory:(NSString *)historyOrHot AndIndex:(NSInteger)index AndTitile:(NSString *)selectTitle{
-    [self.view endEditing:YES];
-    NSLog(@"historyOrHot = %@ , index = %ld , selectTitle = %@" ,historyOrHot ,(long)index ,selectTitle);
-    //这里是选中某个选项， 主要处理跳转逻辑
-  
-}
-
-//删除历史选项
--(void)deleteHistoryOptions:(NSString *)historyOrHot AndIndex:(NSInteger)index AndTitile:(NSString *)selectTitle
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [self.view endEditing:YES];
-    
-    NSLog(@"historyOrHot = %@ , index = %ld , selectTitle = %@" ,historyOrHot ,(long)index ,selectTitle);
-    
-    //这里可以删除本地数据 逻辑
+    return self.dataSource.count;
 }
 
-#pragma mark Xc_serchViewCilckBtn
--(void)cilckCancle{
-    [self.view endEditing:YES];
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    NSString *title = self.dataSource[indexPath.row];
+    cell.textLabel.text = title;
+    cell.textLabel.font = [UIFont systemFontOfSize:13];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *title = self.dataSource[indexPath.row];
+    NSLog(@"title = %@" ,title );
+    NSRange range = [title rangeOfString:@"Demo"];
+    NSString *subTitle = [title substringToIndex:range.location];
+    NSString *subTitle1 = [title substringFromIndex:range.location];
+    NSLog(@"subTitle = %@ subTitle1 = %@ ",subTitle ,subTitle1 );
+    NSString *ctrlTitle = [NSString stringWithFormat:@"%@ViewController",subTitle1];
+    UIViewController *vc = [NSClassFromString(ctrlTitle) new];
+    vc.title = subTitle1 ;
+    [self.navigationController pushViewController:vc animated:YES];
     
-    NSLog(@"单击了取消");
 }
-
--(void)searchresult:(NSString *)resultString{
-    NSLog(@"搜索的关键字 = %@" ,resultString) ;
-    //搜索了关键字 ，就需要历史记录添加进去
-    [_xcLabel insertHistorOptions:resultString];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

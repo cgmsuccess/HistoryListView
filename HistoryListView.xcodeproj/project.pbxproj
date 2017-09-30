@@ -15,13 +15,21 @@
 		182704001F079D84004B4644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182703FE1F079D84004B4644 /* LaunchScreen.storyboard */; };
 		1827040B1F079D85004B4644 /* HistoryListViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827040A1F079D85004B4644 /* HistoryListViewTests.m */; };
 		182704161F079D85004B4644 /* HistoryListViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182704151F079D85004B4644 /* HistoryListViewUITests.m */; };
-		182704321F079E09004B4644 /* UIButton+CGMCilckBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 182704251F079E09004B4644 /* UIButton+CGMCilckBtn.m */; };
-		182704331F079E09004B4644 /* XC_label.m in Sources */ = {isa = PBXBuildFile; fileRef = 182704281F079E09004B4644 /* XC_label.m */; };
-		182704341F079E09004B4644 /* XC_labelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827042A1F079E09004B4644 /* XC_labelCollectionViewCell.m */; };
-		182704351F079E09004B4644 /* XC_labelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827042B1F079E09004B4644 /* XC_labelCollectionViewCell.xib */; };
-		182704361F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827042D1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.m */; };
-		182704371F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827042E1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.xib */; };
 		182704381F079E09004B4644 /* XC_ShearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182704311F079E09004B4644 /* XC_ShearchBarView.m */; };
+		183BC7911F7F2B850059658E /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7901F7F2B850059658E /* Demo1ViewController.m */; };
+		183BC79E1F7F31190059658E /* XC_label.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7921F7F31190059658E /* XC_label.m */; };
+		183BC79F1F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7931F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.m */; };
+		183BC7A01F7F31190059658E /* XC_LabelHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183BC7941F7F31190059658E /* XC_LabelHeaderCollectionReusableView.xib */; };
+		183BC7A11F7F31190059658E /* XC_labelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183BC7951F7F31190059658E /* XC_labelCollectionViewCell.xib */; };
+		183BC7A21F7F31190059658E /* XC_labelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7971F7F31190059658E /* XC_labelCollectionViewCell.m */; };
+		183BC7A31F7F31190059658E /* Label_btn.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC79B1F7F31190059658E /* Label_btn.m */; };
+		183BC7A41F7F31190059658E /* XC_LabelHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC79C1F7F31190059658E /* XC_LabelHeaderCollectionReusableView.m */; };
+		183BC7AA1F7F378C0059658E /* UIView+XC_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7A91F7F378C0059658E /* UIView+XC_Frame.m */; };
+		183BC7AD1F7F42EF0059658E /* UIButton+CGMCilckBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7AB1F7F42EF0059658E /* UIButton+CGMCilckBtn.m */; };
+		183BC7B01F7F4BCF0059658E /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7AF1F7F4BCF0059658E /* Demo2ViewController.m */; };
+		183BC7B31F7F71D40059658E /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7B21F7F71D40059658E /* Demo3ViewController.m */; };
+		183BC7B61F7F726C0059658E /* Demo3Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BC7B51F7F726C0059658E /* Demo3Header.m */; };
+		183BC7B81F7F72740059658E /* Demo3Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183BC7B71F7F72740059658E /* Demo3Header.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,19 +66,34 @@
 		182704111F079D85004B4644 /* HistoryListViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HistoryListViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182704151F079D85004B4644 /* HistoryListViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryListViewUITests.m; sourceTree = "<group>"; };
 		182704171F079D85004B4644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		182704241F079E09004B4644 /* UIButton+CGMCilckBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CGMCilckBtn.h"; sourceTree = "<group>"; };
-		182704251F079E09004B4644 /* UIButton+CGMCilckBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CGMCilckBtn.m"; sourceTree = "<group>"; };
-		182704271F079E09004B4644 /* XC_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_label.h; sourceTree = "<group>"; };
-		182704281F079E09004B4644 /* XC_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_label.m; sourceTree = "<group>"; };
-		182704291F079E09004B4644 /* XC_labelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_labelCollectionViewCell.h; sourceTree = "<group>"; };
-		1827042A1F079E09004B4644 /* XC_labelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_labelCollectionViewCell.m; sourceTree = "<group>"; };
-		1827042B1F079E09004B4644 /* XC_labelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XC_labelCollectionViewCell.xib; sourceTree = "<group>"; };
-		1827042C1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_LabelHeaderCollectionReusableView.h; sourceTree = "<group>"; };
-		1827042D1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_LabelHeaderCollectionReusableView.m; sourceTree = "<group>"; };
-		1827042E1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XC_LabelHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		182704301F079E09004B4644 /* XC_ShearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_ShearchBarView.h; sourceTree = "<group>"; };
 		182704311F079E09004B4644 /* XC_ShearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_ShearchBarView.m; sourceTree = "<group>"; };
 		182704391F079FFF004B4644 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		183BC78F1F7F2B850059658E /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		183BC7901F7F2B850059658E /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		183BC7921F7F31190059658E /* XC_label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_label.m; sourceTree = "<group>"; };
+		183BC7931F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_EqualSpaceCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		183BC7941F7F31190059658E /* XC_LabelHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XC_LabelHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		183BC7951F7F31190059658E /* XC_labelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XC_labelCollectionViewCell.xib; sourceTree = "<group>"; };
+		183BC7961F7F31190059658E /* XC_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_label.h; sourceTree = "<group>"; };
+		183BC7971F7F31190059658E /* XC_labelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_labelCollectionViewCell.m; sourceTree = "<group>"; };
+		183BC7981F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_EqualSpaceCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		183BC7991F7F31190059658E /* XC_labelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_labelCollectionViewCell.h; sourceTree = "<group>"; };
+		183BC79A1F7F31190059658E /* XC_LabelHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XC_LabelHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		183BC79B1F7F31190059658E /* Label_btn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label_btn.m; sourceTree = "<group>"; };
+		183BC79C1F7F31190059658E /* XC_LabelHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XC_LabelHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		183BC79D1F7F31190059658E /* Label_btn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label_btn.h; sourceTree = "<group>"; };
+		183BC7A81F7F378C0059658E /* UIView+XC_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XC_Frame.h"; sourceTree = "<group>"; };
+		183BC7A91F7F378C0059658E /* UIView+XC_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XC_Frame.m"; sourceTree = "<group>"; };
+		183BC7AB1F7F42EF0059658E /* UIButton+CGMCilckBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CGMCilckBtn.m"; sourceTree = "<group>"; };
+		183BC7AC1F7F42EF0059658E /* UIButton+CGMCilckBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CGMCilckBtn.h"; sourceTree = "<group>"; };
+		183BC7AE1F7F4BCF0059658E /* Demo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
+		183BC7AF1F7F4BCF0059658E /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		183BC7B11F7F71D40059658E /* Demo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
+		183BC7B21F7F71D40059658E /* Demo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
+		183BC7B41F7F726C0059658E /* Demo3Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3Header.h; sourceTree = "<group>"; };
+		183BC7B51F7F726C0059658E /* Demo3Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3Header.m; sourceTree = "<group>"; };
+		183BC7B71F7F72740059658E /* Demo3Header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Demo3Header.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				182704391F079FFF004B4644 /* PrefixHeader.pch */,
-				182704231F079E09004B4644 /* CGM_UIbutton */,
+				183BC7891F7F2AD40059658E /* DemoCtrl */,
 				182704261F079E09004B4644 /* XC_Label */,
 				1827042F1F079E09004B4644 /* XC_ShearchBarView */,
 				182703EF1F079D84004B4644 /* HistoryListView */,
@@ -164,26 +187,25 @@
 			path = HistoryListViewUITests;
 			sourceTree = "<group>";
 		};
-		182704231F079E09004B4644 /* CGM_UIbutton */ = {
-			isa = PBXGroup;
-			children = (
-				182704241F079E09004B4644 /* UIButton+CGMCilckBtn.h */,
-				182704251F079E09004B4644 /* UIButton+CGMCilckBtn.m */,
-			);
-			path = CGM_UIbutton;
-			sourceTree = "<group>";
-		};
 		182704261F079E09004B4644 /* XC_Label */ = {
 			isa = PBXGroup;
 			children = (
-				182704271F079E09004B4644 /* XC_label.h */,
-				182704281F079E09004B4644 /* XC_label.m */,
-				182704291F079E09004B4644 /* XC_labelCollectionViewCell.h */,
-				1827042A1F079E09004B4644 /* XC_labelCollectionViewCell.m */,
-				1827042B1F079E09004B4644 /* XC_labelCollectionViewCell.xib */,
-				1827042C1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.h */,
-				1827042D1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.m */,
-				1827042E1F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.xib */,
+				183BC7961F7F31190059658E /* XC_label.h */,
+				183BC7921F7F31190059658E /* XC_label.m */,
+				183BC7941F7F31190059658E /* XC_LabelHeaderCollectionReusableView.xib */,
+				183BC7991F7F31190059658E /* XC_labelCollectionViewCell.h */,
+				183BC7971F7F31190059658E /* XC_labelCollectionViewCell.m */,
+				183BC7951F7F31190059658E /* XC_labelCollectionViewCell.xib */,
+				183BC7981F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.h */,
+				183BC7931F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.m */,
+				183BC79A1F7F31190059658E /* XC_LabelHeaderCollectionReusableView.h */,
+				183BC79C1F7F31190059658E /* XC_LabelHeaderCollectionReusableView.m */,
+				183BC79D1F7F31190059658E /* Label_btn.h */,
+				183BC79B1F7F31190059658E /* Label_btn.m */,
+				183BC7AB1F7F42EF0059658E /* UIButton+CGMCilckBtn.m */,
+				183BC7AC1F7F42EF0059658E /* UIButton+CGMCilckBtn.h */,
+				183BC7A81F7F378C0059658E /* UIView+XC_Frame.h */,
+				183BC7A91F7F378C0059658E /* UIView+XC_Frame.m */,
 			);
 			path = XC_Label;
 			sourceTree = "<group>";
@@ -195,6 +217,62 @@
 				182704311F079E09004B4644 /* XC_ShearchBarView.m */,
 			);
 			path = XC_ShearchBarView;
+			sourceTree = "<group>";
+		};
+		183BC7891F7F2AD40059658E /* DemoCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				183BC78A1F7F2AD40059658E /* Demo1 */,
+				183BC78B1F7F2AD40059658E /* Demo2 */,
+				183BC78C1F7F2AD40059658E /* Demo3 */,
+				183BC78D1F7F2AD40059658E /* Demo4 */,
+				183BC78E1F7F2AD40059658E /* Demo5 */,
+			);
+			path = DemoCtrl;
+			sourceTree = "<group>";
+		};
+		183BC78A1F7F2AD40059658E /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				183BC78F1F7F2B850059658E /* Demo1ViewController.h */,
+				183BC7901F7F2B850059658E /* Demo1ViewController.m */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
+		183BC78B1F7F2AD40059658E /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				183BC7AE1F7F4BCF0059658E /* Demo2ViewController.h */,
+				183BC7AF1F7F4BCF0059658E /* Demo2ViewController.m */,
+			);
+			path = Demo2;
+			sourceTree = "<group>";
+		};
+		183BC78C1F7F2AD40059658E /* Demo3 */ = {
+			isa = PBXGroup;
+			children = (
+				183BC7B11F7F71D40059658E /* Demo3ViewController.h */,
+				183BC7B21F7F71D40059658E /* Demo3ViewController.m */,
+				183BC7B41F7F726C0059658E /* Demo3Header.h */,
+				183BC7B51F7F726C0059658E /* Demo3Header.m */,
+				183BC7B71F7F72740059658E /* Demo3Header.xib */,
+			);
+			path = Demo3;
+			sourceTree = "<group>";
+		};
+		183BC78D1F7F2AD40059658E /* Demo4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Demo4;
+			sourceTree = "<group>";
+		};
+		183BC78E1F7F2AD40059658E /* Demo5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Demo5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,11 +382,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182704351F079E09004B4644 /* XC_labelCollectionViewCell.xib in Resources */,
 				182704001F079D84004B4644 /* LaunchScreen.storyboard in Resources */,
+				183BC7A11F7F31190059658E /* XC_labelCollectionViewCell.xib in Resources */,
 				182703FD1F079D84004B4644 /* Assets.xcassets in Resources */,
+				183BC7A01F7F31190059658E /* XC_LabelHeaderCollectionReusableView.xib in Resources */,
 				182703FB1F079D84004B4644 /* Main.storyboard in Resources */,
-				182704371F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.xib in Resources */,
+				183BC7B81F7F72740059658E /* Demo3Header.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,14 +412,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182704341F079E09004B4644 /* XC_labelCollectionViewCell.m in Sources */,
 				182703F81F079D84004B4644 /* ViewController.m in Sources */,
 				182703F51F079D84004B4644 /* AppDelegate.m in Sources */,
-				182704361F079E09004B4644 /* XC_LabelHeaderCollectionReusableView.m in Sources */,
+				183BC7AA1F7F378C0059658E /* UIView+XC_Frame.m in Sources */,
 				182703F21F079D84004B4644 /* main.m in Sources */,
-				182704331F079E09004B4644 /* XC_label.m in Sources */,
+				183BC7A21F7F31190059658E /* XC_labelCollectionViewCell.m in Sources */,
+				183BC7B31F7F71D40059658E /* Demo3ViewController.m in Sources */,
+				183BC7B01F7F4BCF0059658E /* Demo2ViewController.m in Sources */,
+				183BC7AD1F7F42EF0059658E /* UIButton+CGMCilckBtn.m in Sources */,
 				182704381F079E09004B4644 /* XC_ShearchBarView.m in Sources */,
-				182704321F079E09004B4644 /* UIButton+CGMCilckBtn.m in Sources */,
+				183BC7A31F7F31190059658E /* Label_btn.m in Sources */,
+				183BC7911F7F2B850059658E /* Demo1ViewController.m in Sources */,
+				183BC7B61F7F726C0059658E /* Demo3Header.m in Sources */,
+				183BC79F1F7F31190059658E /* XC_EqualSpaceCollectionViewFlowLayout.m in Sources */,
+				183BC7A41F7F31190059658E /* XC_LabelHeaderCollectionReusableView.m in Sources */,
+				183BC79E1F7F31190059658E /* XC_label.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +662,7 @@
 				1827041C1F079D85004B4644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1827041D1F079D85004B4644 /* Build configuration list for PBXNativeTarget "HistoryListViewTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +671,7 @@
 				1827041F1F079D85004B4644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		182704201F079D85004B4644 /* Build configuration list for PBXNativeTarget "HistoryListViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +680,7 @@
 				182704221F079D85004B4644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
