@@ -2,7 +2,8 @@
 <h3>几句代码快速创建 有推荐和历史 搜索的 页面</3>
 
 
-<h5 style = "color:red;text-align:center">如果你喜欢，请送我一个星星鼓励吧😄</h5>
+<h2 style = "color:red;text-align:center">如果你喜欢，请送我一个星星鼓励吧😄</h2>
+<a href= "target" >如果你喜欢，请送我一个星星鼓励吧😄</a>
 <h1>效果图</h1>
 <img src = "https://github.com/cgmsuccess/HistoryListView/blob/master/test.gif">效果图</ima>
 
