@@ -125,6 +125,10 @@
     [_xcLabel insertHistorOptions:resultString];
 }
 
+-(void)dealloc
+{
+    XCLog(@"dealloc , %@" ,NSStringFromClass([self class]));
+}
 
 
 /*
