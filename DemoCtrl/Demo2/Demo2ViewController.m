@@ -36,9 +36,11 @@
     
     _xcLabel.opetionsColor = [UIColor redColor];  //修改选项的颜色。默认白色
     
+    _xcLabel.headTitle_one = @"铁头娃";
+//    _xcLabel.headTitle_two = @"没毛病";
     
-    _xcLabel.section_heihtOne = 50 ; //第一组头高度
-    _xcLabel.opetionsHeight = 66 ;
+    _xcLabel.section_heihtOne = 30 ; //第一组头高度
+    _xcLabel.opetionsHeight = 40 ;
     
     
     [_xcLabel setOptionLoction:XC_collectionAlignTypeLeft]; //选项居左边

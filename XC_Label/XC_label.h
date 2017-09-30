@@ -116,7 +116,7 @@
 -(void)setOptionLoction:(XC_collectionAlignType)alignType ;
 
 /**  设置偏移量   */
--(void)setcolletionOffset:(CGPoint)offset ;
+-(void)setcolletionOffset:(CGPoint)offset AndAnimal:(BOOL)animal ;
 
 
 /**

@@ -1,51 +1,45 @@
 //
-//  Demo3Header.m
+//  Demo4Header.m
 //  HistoryListView
 //
 //  Created by apple on 17/9/30.
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "Demo3Header.h"
-#import "UIButton+CGMCilckBtn.h"
+#import "Demo4Header.h"
 
-@interface Demo3Header()<selectHotOrHistoryDelegate>
+@interface Demo4Header()<selectHotOrHistoryDelegate>
 {
     XC_label *_xcLabel ;
 }
+
 @property (weak, nonatomic) IBOutlet UITextField *inputTextfile;
-
-/** 这个属性是：是否 需要toolsview 偏移 ****/
-@property (nonatomic,assign)BOOL isOffset ;
-
 
 
 @end
 
-@implementation Demo3Header
 
-+(instancetype)loadDemo3headerView
+@implementation Demo4Header
+
+
++(instancetype)loadDemo4headerView
 {
     return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:0][0];
 }
 
-
 -(void)awakeFromNib
 {
     [super awakeFromNib];
-    _isOffset = YES ;
+    [self toolView];
     
     [self.inputTextfile becomeFirstResponder];
-    
-    [self toolView];
 }
-
 
 -(void)toolView
 {
     NSArray *titleArr = @[@"www.",@".com",@"https://",@"http://",@".cn",@".net",@".int"];
     NSArray *historyArr = @[] ;
-    _xcLabel = [[XC_label alloc] initWithFrame:CGRectMake(0, 0, KmainScreenWidth, 45) AndTitleArr:titleArr AndhistoryArr:historyArr AndTitleFont:16 AndScrollDirection:UICollectionViewScrollDirectionHorizontal]; //水平
+    _xcLabel = [[XC_label alloc] initWithFrame:CGRectMake(0, 0, KmainScreenWidth, 80) AndTitleArr:titleArr AndhistoryArr:historyArr AndTitleFont:16 AndScrollDirection:UICollectionViewScrollDirectionVertical]; //水平
     
     /*
      UICollectionViewScrollDirectionHorizontal
@@ -60,7 +54,9 @@
     
     _xcLabel.opetionsColor = [UIColor orangeColor];  //修改选项的颜色。默认白色
     
-    _xcLabel.section_widthOne = 0.001; //组头1的宽度
+//    _xcLabel.section_widthOne = 0.001; //组头1的宽度
+    _xcLabel.section_heihtOne = 0.001 ; //组头1 的高度
+    
     _xcLabel.opetionsHeight = 33 ; //选项的高度
     
     _xcLabel.backgroundColor = [UIColor cyanColor];
@@ -69,27 +65,22 @@
 }
 
 
-#pragma mark selectHotOrHistoryDelegate
+#pragma selectHotOrHistoryDelegate
 
--(void)selectHotOrHistory:( NSString * _Nullable )historyOrHot AndIndex:(NSInteger)index AndTitile:(NSString * _Nullable)selectTitle
+-(void)selectHotOrHistory:(NSString *)historyOrHot AndIndex:(NSInteger)index AndTitile:(NSString *)selectTitle
 {
-    //让他偏移一下，
-    if (_isOffset) {
-        [_xcLabel setcolletionOffset:CGPointMake(50, 0) AndAnimal:YES];
-        _isOffset = NO ;
-    }
-    
+ 
     XCLog(@"historyOrHot = %@ , index = %ld , selectTitle = %@" ,historyOrHot ,(long)index ,selectTitle);
     self.inputTextfile.text = [NSString stringWithFormat:@"%@%@",self.inputTextfile.text,selectTitle];
     
     NSString *temp =nil;
     NSString *newString  = nil ;
-        //去中间包含的空格
+    //去中间包含的空格
     for(int i =0; i < [self.inputTextfile.text length]; i++)
     {
         temp = [self.inputTextfile.text substringWithRange:NSMakeRange(i,1)];
         XCLog(@"第%d个字是:%@ %@",i,temp,[temp class]);
-        if([[NSString stringWithFormat:@"%@",[temp class]] isEqualToString:@"__NSCFString"]&&[temp isEqualToString:@" "]){
+        if([[NSString stringWithFormat:@"%@",[temp class]] isEqualToString:@"__NSCFString"]){
             XCLog(@"第%d个字是:%@ %@",i,temp,[temp class]);
         }else{
             if (!newString) {
@@ -100,7 +91,6 @@
     }
     self.inputTextfile.text = newString ;
 }
-
 
 
 /*

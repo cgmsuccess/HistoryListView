@@ -43,7 +43,9 @@ static NSString *const cellID = @"cellID" ;
 {
     self.dataSource = @[@"默认UI模拟推荐选项和历史搜索选项Demo1",
                         @"局部修改选项的UI和高度等Demo2",
-                        @"把他作为一个键盘的toolsView使用Demo3"
+                        @"一个键盘的toolsView水平滑动使用Demo3",
+                        @"一个键盘的toolsView锤子滑动使用Demo4",
+                        @"只有推荐新闻的标签页面Demo5",
                         ];
 }
 

@@ -142,9 +142,9 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
     [self.collectionView reloadData];
 }
 
--(void)setcolletionOffset:(CGPoint)offset
+-(void)setcolletionOffset:(CGPoint)offset AndAnimal:(BOOL)animal
 {
-    [self.collectionView setContentOffset:offset animated:YES] ;
+    [self.collectionView setContentOffset:offset animated:animal] ;
 }
 
 

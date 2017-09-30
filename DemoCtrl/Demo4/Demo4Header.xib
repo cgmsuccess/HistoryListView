@@ -8,14 +8,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Demo3Header">
-            <rect key="frame" x="0.0" y="0.0" width="256" height="51"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Demo4Header">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-Mh-aKX">
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="A1Z-ir-RZJ"/>
-                    </constraints>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dRE-2A-Clk" customClass="请输入">
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -23,15 +20,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Sc0-Mh-aKX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3GM-wd-yTu"/>
-                <constraint firstItem="Sc0-Mh-aKX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4Rd-Ao-SCO"/>
-                <constraint firstAttribute="trailing" secondItem="Sc0-Mh-aKX" secondAttribute="trailing" constant="10" id="4qa-dO-2Y8"/>
+                <constraint firstItem="dRE-2A-Clk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="35z-Va-BTf"/>
+                <constraint firstAttribute="trailing" secondItem="dRE-2A-Clk" secondAttribute="trailing" constant="7" id="8Rg-VC-Toe"/>
+                <constraint firstAttribute="bottom" secondItem="dRE-2A-Clk" secondAttribute="bottom" constant="11" id="NBX-Tj-DdO"/>
+                <constraint firstItem="dRE-2A-Clk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="7" id="Rc7-5H-VzZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="inputTextfile" destination="Sc0-Mh-aKX" id="z7T-iZ-yc1"/>
+                <outlet property="inputTextfile" destination="dRE-2A-Clk" id="tMw-Hb-D7w"/>
             </connections>
-            <point key="canvasLocation" x="-26" y="-254.5"/>
+            <point key="canvasLocation" x="32.5" y="-763"/>
         </view>
     </objects>
 </document>
