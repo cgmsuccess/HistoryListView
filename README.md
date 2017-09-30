@@ -46,12 +46,30 @@ _xcLabel.delegate = self ;
 
 </h3>
 
+
+
+<ol>
+<li>实现的思路大概描述一下</li>
+<li>写一个标签view xcLabel 然后在view上面添加collectionview 实现collectionview 的代理等。添加代理给xcLabel</li>
+<li>给xcLabel 添加代理方法，把点击事件等等 传递出去</li>
+<li>声明变量 ，外面可以修改里面局部的东西</li>
+<li>mark 这里面最重要的就是 collectionview 的 layout的重写了。 因为 collectionview 他默认居中，自适应cell，导致有的cell很长的时候 会在中间，二边空很多。布局就非常不好看。所以这里 继承 UICollectionViewFlowLayout 重写下了</li>
+<li>UICollectionViewFlowLayout 参考 <a href ="http://www.jianshu.com/p/ac3edf92c5fd">参考资料😬</a> -->参考。
+</li>
+
+</ol>
+
+
+</hr>
+
+
+
 <ol>
 <li>标签小应用 😬😬😬😬</li>
 <li>代码比较乱，而且命名不规范，开始是想做一个推荐 和历史搜索页面的，后面稍微扩展了一下，导致里面的名字都是与history等命名的。很多不严谨的地方。</li>
 <li>分享出来主要是提供一个思路参考一下。代码不好，请大神勿喷</li>
 <li>分享出来主要是提供一个思路参考一下。代码不好，请大神勿喷</li>
 <li>分享出来主要是提供一个思路参考一下。代码不好，请大神勿喷</li>
-<li>🤗😰🤗/li>
+<li>🤗😰🤗</li>
 
 </ol>
