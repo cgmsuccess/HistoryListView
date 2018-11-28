@@ -81,6 +81,8 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
         self.editorState = EditorStateHistoryDefault ;//默认不编辑
         self.editorHotState = EditorStateHotDefault ;//默认不编辑
         [self  addSubview:self.collectionView];
+        
+        
     }
     return self ;
 }
@@ -99,6 +101,7 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
     [self.collectionView reloadData];
 }
 
+
 #pragma mark 刷新 推荐选项
 -(void)reloadHotOptions:(NSMutableArray *)hotOptions
 {
@@ -111,6 +114,7 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
     [self.historySource removeLastObject];
     [self.collectionView reloadData];
 }
+
 
 
 
@@ -157,11 +161,10 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
         layout = [[XC_EqualSpaceCollectionViewFlowLayout alloc] init];
         layout.cellDistance = 10;
         layout.cellAligntype = XC_collectionAlignTypeLeft;
-
         //collectionview 左右滑动还是上下滑动 。默认上下
         layout.scrollDirection = self.xcLabel_scrollDirection;
         // 创建UICollectionView
-        _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds   collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:layout];
         
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
@@ -280,6 +283,13 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
         
     cell.cellbackColor = self.opetionsColor?self.opetionsColor:[UIColor whiteColor];
     [cell setNeedsDisplay];  //一定要重绘，不然计算不精准，我们设置的选项的地图就不对
+    
+    if (indexPath.item == self.dataSource.count - 1) {
+        CGRect rect = [cell convertRect:cell.frame toView:self];
+        NSLog(@"xx  -- rect  = %@" , NSStringFromCGRect(rect));
+        NSLog(@"self.view = %@",NSStringFromCGRect(self.bounds));
+        NSLog(@"%@", self.dataSource[indexPath.row]);
+    }
     return cell;
 }
 
@@ -443,7 +453,7 @@ typedef NS_ENUM(NSInteger,EditorStateHot){
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     
-    return UIEdgeInsetsMake(5, 5, 5, 0);
+    return UIEdgeInsetsMake(10, 10, 10, 10);
 }
 
 //每个item 之间的间距

@@ -7,7 +7,7 @@
 //
 
 #import "Demo1ViewController.h"
-
+#import "UIView+XC_Frame.h"
 #import "XC_label.h"
 #import "XC_ShearchBarView.h"
 
@@ -70,6 +70,11 @@
     self.historySource = [NSMutableArray arrayWithArray:historyArr];
 
     _xcLabel = [[XC_label alloc] initWithFrame:CGRectMake(0, 64, LabelScreenW, LabelScreenH-64) AndTitleArr:arr AndhistoryArr:historyArr AndTitleFont:16 AndScrollDirection:UICollectionViewScrollDirectionVertical];
+    _xcLabel.backgroundColor = [UIColor redColor];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _xcLabel.xc_height = 505;
+    });
     _xcLabel.delegate = self ;
     
 //    _xcLabel.isShow_One = YES ;  //默认NO 显示

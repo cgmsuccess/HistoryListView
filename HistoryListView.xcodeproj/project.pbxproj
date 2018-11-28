@@ -384,7 +384,7 @@
 				TargetAttributes = {
 					182703EC1F079D84004B4644 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 85X7688G9T;
+						DevelopmentTeam = XZ557WUPWQ;
 						ProvisioningStyle = Automatic;
 					};
 					182704051F079D85004B4644 = {
@@ -619,7 +619,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 85X7688G9T;
+				DEVELOPMENT_TEAM = XZ557WUPWQ;
 				GCC_PREFIX_HEADER = $SRCROOT/PrefixHeader.pch;
 				INFOPLIST_FILE = HistoryListView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -633,7 +633,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 85X7688G9T;
+				DEVELOPMENT_TEAM = XZ557WUPWQ;
 				GCC_PREFIX_HEADER = $SRCROOT/PrefixHeader.pch;
 				INFOPLIST_FILE = HistoryListView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

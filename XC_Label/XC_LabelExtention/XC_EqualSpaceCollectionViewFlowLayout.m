@@ -57,7 +57,7 @@
         return layoutAttributes ;
     }
     
-    
+
     //用来临时存放一行的Cell数组
     NSMutableArray * layoutAttributesTemp = [[NSMutableArray alloc]init];
     for (NSUInteger index = 0; index < layoutAttributes.count ; index++) {
@@ -91,6 +91,8 @@
             [self setCellFrameWith:layoutAttributesTemp];
         }
     }
+    NSLog(@"---x  这里可以获取到collegetioncell 最后一个cell的高度 rect = %@" , layoutAttributes) ;  ///
+
     return layoutAttributes;
 }
 
